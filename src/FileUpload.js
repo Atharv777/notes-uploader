@@ -34,7 +34,7 @@ const FileUpload = () => {
         }
 
         files.forEach((file) => {
-            const storageRef = ref(storage, `chem/${file.name}`);
+            const storageRef = ref(storage, `chem/chem14aug/${file.name}`);
             const uploadTask = uploadBytesResumable(storageRef, file);
 
             uploadTask.on(
